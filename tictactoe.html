@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #fdae38;
+        }
+        #container_{
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            justify-content: center;
+        }
+        .row--container{
+            height: 85px;
+            width: 410px;
+            position: relative;
+            left: 40px;
+            top: 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .squares--{
+            height: 80px;
+            width: 133px;
+            background-color: #3a3e59;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            border-style: none;
+            border-radius: 3px;
+        }
+        div h1{
+            margin-top: 20px;
+            background: none;
+        }
+        #result_container{
+            position: absolute;
+            left: 36%;
+            top: 20%;
+            align-content: center;
+        }
+        #header_ h1{
+            color: #f2cac8;
+            position: absolute;
+            left: 40%;
+            -webkit-text-stroke: 2px black;
+        }
+        #reset_{
+            position: absolute;
+            top: 85%;
+            left: 45%;
+        }
+        #reset_btn{
+            height: 40px;
+            width: 80px;
+            background-color: #f2cac8;;
+        }
+    </style>
+</head>
+<body>
+    <div id="header_"><h1>Tic Tac Toe</h1></div>
+    <div id="container_">
+        <div id="row_container1" class="row--container">
+            <button id="div1_" class="squares--" onclick="Func1(); gameFunction();dormant2()"value="div1"><h1></h1></button>
+            <button id="div2_" class="squares--" onclick="Func2(); gameFunction();dormant2()"value="div2"><h1></h1></button>
+            <button id="div3_" class="squares--" onclick="Func3(); gameFunction();dormant2()"value="div3"><h1></h1></button>
+        </div>
+        <div id="row_container2" class="row--container">
+            <button id="div4_" class="squares--" onclick="Func4();gameFunction();dormant2()"value="div4"></button>
+            <button id="div5_" class="squares--" onclick="Func5();gameFunction();dormant2()"value="div5"><h1></h1></button>
+            <button id="div6_" class="squares--" onclick="Func6();gameFunction();dormant2()"value="div6"><h1></h1>
+        </div>
+        <div id="row_container3" class="row--container">
+            <button id="div7_" class="squares--" onclick="Func7(); gameFunction();dormant2()"value="div7"><h1></h1></button>
+            <button id="div8_" class="squares--" onclick="Func8(); gameFunction();dormant2()"value="div8"><h1></h1></button>
+            <button id="div9_" class="squares--" onclick="Func9(); gameFunction();dormant2()"value="div9"><h1></h1></button>
+        </div>
+    </div>
+    <div id="result_container"><h1></h1></div>
+    <div id="reset_"><button id="reset_btn" onclick="reset()">reset</button></div>
+    <script src="ticTacToe.js"></script>
+</body>
+</html>
