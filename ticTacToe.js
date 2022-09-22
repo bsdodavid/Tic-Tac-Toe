@@ -15,59 +15,60 @@ const gameFunction = ()=>{
     if(div1==='X' && div2==='X' && div3==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        //dormant()
+        dormant()
     }else if(div4==='X' && div5==='X' && div6==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div7==='X' && div8==='X' && div9==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-       
+        dormant()
     }
     else if(div1==='O' && div2==='O' && div3==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
-        
+        dormant()
     }else if(div4==='O' && div5==='O' && div6==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
+        dormant()
     }else if(div7==='O' && div8==='O' && div9==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
-        
+        dormant()
     }else if(div1==='X'&& div5==='X'&& div9==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div3==='X'&& div5==='X'&&div7==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div1==='O'&& div5==='O'&& div9==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
-        
+        dormant()
     }else if(div3==='O'&& div5==='O'&&div7==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
-        
+        dormant()
     }else if(div1==='X'&&div4==='X'&&div7==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div2==='X'&& div5==='X'&& div8==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div3==='X'&& div6==='X'&& div9==='X'){
         result.innerHTML = `<h1>Game over!! X won</h1>`
         score+=1
-        
+        dormant()
     }else if(div2==='O'&& div5==='O'&& div8==='O'){
         result.innerHTML = `<h1>Game over!! O won</h1>`
         score+=1
-        
+        dormant()
     }
 }
 //count object to keep record of times a 'div' button is clicked 
@@ -91,20 +92,6 @@ const dormant=()=>{
         })
     })
 }
-// to do
-const dormant2=()=>{
-    let buttons = document.querySelectorAll('.squares--')
-    if(score==1){
-        return buttons.forEach(button=>{
-            if(count[button.value]>1){
-                button.disabled=false
-            }else{
-                button.disabled=true
-            }
-        })
-    }
-}
-
 
 //if flag is 1 the button value should be x and vice versa
 let flag = 1
