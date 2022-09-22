@@ -1,3 +1,6 @@
+//code contributed by david
+//follow instagram@bsdodavid
+
 // this function checks for the winner
 let score = 0;
 const gameFunction = ()=>{
